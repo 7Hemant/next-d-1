@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .clipPath {
+    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
