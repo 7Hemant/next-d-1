@@ -189,7 +189,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="font-[700] text-[1.3rem]">
-                  For all the ways you work, we're here
+                  For all the ways you work, we&apos;re here
                 </h3>
               </div>
             </div>
