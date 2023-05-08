@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-between items-center">
-        <h1 className="text-[2.5rem] font-[800] my-5 text-[#04433B] leading-9">
+        <h1 className="text-[18px] md:text-[2.5rem] font-[800] my-5 text-[#04433B] leading-9">
           WeWork <span className="font-[700]">+</span> Salesforce
         </h1>
         <button className="font-[600] bg-[#00B686] rounded-md text-white px-4 py-2 ">
@@ -14,26 +14,28 @@ export default function Home() {
         </button>
       </div>
       <div className="relative  ">
-        <div className={`h-[191px]  relative `}>
+        <div className={`h-[82px] md:h-[191px]  relative `}>
           <Image
             src="/assets/images/heroBgImage.png"
             fill
             alt="bg-image"
-            className="rounded-[10px] object-cover"
+            className="rounded-[10px] object-full  "
           ></Image>
         </div>
 
-        <div className="max-w-[45.64%] h-[191px] absolute top-0 right-0 pt-[3rem] lg:py-[2rem]  bg-white opacity-70 px-24  lg:px-32 clipPath ">
-          <h1 className="text-[2rem] lg:text-[3.055rem] font-[900]  ">
+        <div className="max-w-[45.64%] h-[82px] md:h-[191px] absolute top-0 right-0 pt-[1rem] md:pt-[3rem] lg:py-[2rem]  bg-white opacity-70 px-10 sm:px-24  lg:px-32 clipPath ">
+          <h1 className=" text-[1.3rem] sm:text-[2rem]  lg:text-[3.055rem] font-[900]  ">
             Workspace Proposal
           </h1>
         </div>
-        <div className="bg-white space-x-4 p-4 rounded-[10px] absolute flex items-center -bottom-16 left-6">
-          <div className="relative w-[77px] h-[77px]  ">
+        <div className="bg-white space-x-4 p-4 rounded-[10px] absolute flex items-center -bottom-10 md:-bottom-16 left-6">
+          <div className="relative w-[44px] h-[44px] md:w-[77px] md:h-[77px]  ">
             <Image src="/assets/images/wework.png" fill alt="logo" />
           </div>
-          <span className="text-[#dbdbdb] font-[500] text-[4rem]">+</span>
-          <div className="relative w-[98px] h-[88px]">
+          <span className="text-[#dbdbdb] font-[500] text-[2rem] sm:text-[4rem]">
+            +
+          </span>
+          <div className="relative w-[50px] h-[50px] md:w-[98px] md:h-[88px]">
             <Image
               src="/assets/images/salesforce-image.png"
               fill
@@ -43,14 +45,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="md:mt-[4rem]">
+      <div className="mt-[4rem]">
         <div>
           <h1 className="text-[25px] text-[#233735] font-[700]">
             Project Scope Recap
           </h1>
         </div>
         <div className="border-b  flex justify-between items-center mt-4">
-          <div className="flex space-x-[7px] items-center">
+          <div className="flex space-x-[7px] items-center text-[10px] md:text-[1rem]">
             <button className="px-[14px] py-2 text-[#657372] hover:text-[#00B686] font-[700] border border-[#BDC3C2] rounded-t-[5px] capitalize">
               Basic Info
             </button>
@@ -64,7 +66,7 @@ export default function Home() {
               Contact
             </button>
           </div>
-          <button className="px-[14px] py-2 text-[#657372] hover:text-[#00B686] font-[700] border border-[#BDC3C2] rounded-t-[5px] capitalize">
+          <button className=" hidden md:block px-[14px] py-2 text-[#657372] hover:text-[#00B686] font-[700] border border-[#BDC3C2] rounded-t-[5px] capitalize">
             internal Actions
           </button>
         </div>
@@ -95,7 +97,7 @@ export default function Home() {
             <h1 className="font-[700] text-[1.56rem] text-[#233735] capitalize">
               Company profile
             </h1>
-            <div className="flex items-center space-x-2 border rounded-[5px] py-2">
+            <div className="md:flex items-center space-x-2 border rounded-[5px] py-2 hidden">
               <div className="p-2 border-r ">
                 <div className="relative w-[10.5px] h-[16px]  ">
                   <Image
@@ -127,14 +129,14 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full relative mt-[26px] ">
-            <div className="relative w-full h-[459px] rounded-[10px]">
+            <div className="relative w-full md:h-[459px] h-[238px] rounded-[10px]">
               <Image
                 src="/assets/images/company-profile-bg-image.png"
                 fill
                 alt="company-profile"
-                className="rounded-[10px]"
+                className="rounded-[10px] object-cover"
               />
-              <div className="absolute opacity-80 left-[50%] -translate-x-[50%] flex items-center border bg-white p-2 top-6 rounded-[5px]">
+              <div className="absolute opacity-80 left-[50%] -translate-x-[50%] flex items-center border bg-white p-2 top-1 md:top-6 rounded-[5px]">
                 <div className="flex items-center mr-8">
                   <GrDocumentPdf fill=" #657372" />
                   <p className="text-[14px] ml-2 text-[#657372]">1/15</p>
@@ -179,7 +181,7 @@ export default function Home() {
               </div>
 
               <div className=" bg-white opacity-70 absolute top-[50%] left-[50%]  -translate-x-[50%]  -translate-y-[50%] flex flex-col justify-center items-center p-[1.5rem]  ">
-                <div className=" flex justify-center w-[400px] h-[64.49px] opacity-100   ">
+                <div className=" flex justify-center max-w-[400px] min-w-[250px] md:w-[400px] h-[50px] md:h-[64.49px] opacity-100   ">
                   <Image
                     src="/assets/images/wework-logo.png"
                     width={288.54}
@@ -188,7 +190,7 @@ export default function Home() {
                     className="opacity-100"
                   />
                 </div>
-                <h3 className="font-[700] text-[1.3rem]">
+                <h3 className="font-[700] mt-2  text-[.8rem] md:text-[1.3rem]">
                   For all the ways you work, we&apos;re here
                 </h3>
               </div>
