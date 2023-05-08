@@ -13,19 +13,20 @@ export default function Home() {
           Publish/Share
         </button>
       </div>
-
-      <div className="relative ">
+      <div className="relative  ">
         <div className={`h-[191px]  relative `}>
           <Image
             src="/assets/images/heroBgImage.png"
             fill
             alt="bg-image"
-            className="rounded-[10px]"
+            className="rounded-[10px] object-cover"
           ></Image>
         </div>
 
-        <div className="max-w-[45.64%] h-[191px] absolute top-0 right-0 py-[2rem] bg-white opacity-70 px-32 clipPath ">
-          <h1 className="text-[3.055rem] font-[900] ">Workspace Proposal</h1>
+        <div className="max-w-[45.64%] h-[191px] absolute top-0 right-0 pt-[3rem] lg:py-[2rem]  bg-white opacity-70 px-24  lg:px-32 clipPath ">
+          <h1 className="text-[2rem] lg:text-[3.055rem] font-[900]  ">
+            Workspace Proposal
+          </h1>
         </div>
         <div className="bg-white space-x-4 p-4 rounded-[10px] absolute flex items-center -bottom-16 left-6">
           <div className="relative w-[77px] h-[77px]  ">
@@ -69,7 +70,7 @@ export default function Home() {
         </div>
       </div>
       <section className="mt-[2.5rem] flex gap-5 mb-10 ">
-        <div className="bg-white rounded-[10px] max-w-[20%] px-2 h-max ">
+        <div className="bg-white rounded-[10px] max-w-[20%] px-2 h-max hidden lg:block ">
           <button className=" capitalize  text-[#657372] text-[1.13rem] border-b font-[700] p-2 my-2 w-full">
             Overview
           </button>
@@ -176,12 +177,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/* wework logo  */}
+
               <div className=" bg-white opacity-70 absolute top-[50%] left-[50%]  -translate-x-[50%]  -translate-y-[50%] flex flex-col justify-center items-center p-[1.5rem]  ">
-                <div className="relative w-[288.54px] h-[64.49px] opacity-100  ">
+                <div className=" flex justify-center w-[400px] h-[64.49px] opacity-100   ">
                   <Image
                     src="/assets/images/wework-logo.png"
-                    fill
+                    width={288.54}
+                    height={64.49}
                     alt="logo"
                     className="opacity-100"
                   />

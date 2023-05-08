@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + " bg-[#F2FBF9]"}>
-        <div className="md:mx-[2rem]">
+        <div className="mx-1  md:mx-[2rem]">
           <Header />
           {children}
         </div>
